@@ -1,109 +1,102 @@
-# Brain Tumor Detection Using CNN
-
-## Overview
+Brain Tumor Detection Using CNN
+Overview
 This project focuses on developing a Convolutional Neural Network (CNN) model to detect brain tumors from MRI images. The goal is to automate the process of brain tumor detection, aiding medical professionals in early diagnosis and treatment planning.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
-## Introduction
+Table of Contents
+Introduction
+Dataset
+Model Architecture
+Installation
+Usage
+Results
+Contributing
+License
+Acknowledgements
+Introduction
 Brain tumors are life-threatening conditions that require early detection for effective treatment. Traditional methods rely heavily on manual interpretation of MRI scans by radiologists. This project leverages deep learning, specifically CNNs, to build an automated system that can classify MRI images into tumor and non-tumor categories.
 
-## Dataset
-The dataset used for this project consists of MRI images of brain scans, categorized into two classes: 
-- **Tumor** 
-- **No Tumor**
+Dataset
+The dataset used for this project consists of MRI images of brain scans, categorized into two classes:
 
-### Dataset Source
-- The dataset can be obtained from [Kaggle](https://www.kaggle.com) or any other public dataset repository that provides labeled brain MRI images.
-
-### Data Preprocessing
-- Images are resized to a standard input size for the CNN.
-- Data augmentation techniques are applied to enhance the training process.
-
-## Model Architecture
+Tumor
+No Tumor
+Dataset Source
+The dataset can be obtained from Kaggle or any other public dataset repository that provides labeled brain MRI images.
+Data Preprocessing
+Images are resized to a standard input size for the CNN.
+Data augmentation techniques are applied to enhance the training process.
+Model Architecture
 The CNN model is designed with the following layers:
-- **Convolutional Layers:** Extracts features from the input images.
-- **Max-Pooling Layers:** Reduces the dimensionality of the feature maps.
-- **Fully Connected Layers:** Maps the extracted features to the final output.
-- **Output Layer:** Uses a softmax activation function for classification into tumor or non-tumor categories.
 
-### Hyperparameters
-- **Optimizer:** Adam
-- **Loss Function:** Categorical Crossentropy
-- **Learning Rate:** 0.001
-- **Batch Size:** 32
-- **Epochs:** 25
-
-## Installation
+Convolutional Layers: Extracts features from the input images.
+Max-Pooling Layers: Reduces the dimensionality of the feature maps.
+Fully Connected Layers: Maps the extracted features to the final output.
+Output Layer: Uses a softmax activation function for classification into tumor or non-tumor categories.
+Hyperparameters
+Optimizer: Adam
+Loss Function: Categorical Crossentropy
+Learning Rate: 0.001
+Batch Size: 32
+Epochs: 25
+Installation
 To run this project locally, follow these steps:
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/brain-tumor-detection-cnn.git
-    ```
+Clone the repository:
 
-2. Navigate to the project directory:
-    ```bash
-    cd brain-tumor-detection-cnn
-    ```
+bash
+Copy code
+git clone https://github.com/your-username/brain-tumor-detection-cnn.git
+Navigate to the project directory:
 
-3. Create a virtual environment:
-    ```bash
-    python -m venv venv
-    ```
+bash
+Copy code
+cd brain-tumor-detection-cnn
+Create a virtual environment:
 
-4. Activate the virtual environment:
-    - On Windows:
-      ```bash
-      venv\Scripts\activate
-      ```
-    - On macOS/Linux:
-      ```bash
-      source venv/bin/activate
-      ```
+bash
+Copy code
+python -m venv venv
+Activate the virtual environment:
 
-5. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+On Windows:
+bash
+Copy code
+venv\Scripts\activate
+On macOS/Linux:
+bash
+Copy code
+source venv/bin/activate
+Install the required packages:
 
-## Usage
-1. Prepare your dataset by placing MRI images in the `data/` directory.
-2. Run the training script:
-    ```bash
-    python train.py
-    ```
-3. Evaluate the model using the test dataset:
-    ```bash
-    python evaluate.py
-    ```
-
-## Results
-- The model achieves an accuracy of **X%** on the test dataset.
-- Confusion matrix, precision, recall, and F1-score are provided in the `results/` directory.
-
-## Contributing
+bash
+Copy code
+pip install -r requirements.txt
+Usage
+Prepare your dataset by placing MRI images in the data/ directory.
+Run the training script:
+bash
+Copy code
+python train.py
+Evaluate the model using the test dataset:
+bash
+Copy code
+python evaluate.py
+Results
+The model achieves an accuracy of X% on the test dataset.
+Confusion matrix, precision, recall, and F1-score are provided in the results/ directory.
+Contributing
 Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Commit your changes (git commit -m 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Open a pull request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgements
-- The dataset providers for making the data available.
-- The open-source community for their contributions to the development tools and libraries used in this project.
+Acknowledgements
+The dataset providers for making the data available.
+The open-source community for their contributions to the development tools and libraries used in this project.
 
 
