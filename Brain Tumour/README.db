@@ -45,7 +45,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/brain-tumor-detection-cnn.git
+git clone https://github.com/suyashB45/ML-Project-Application/tree/main/Brain%20Tumour
 Navigate to the project directory:
 
 bash
